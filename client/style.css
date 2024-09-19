@@ -1,0 +1,96 @@
+:root {
+    --background: #ffffff;
+    --border: #2f2d30;
+    --background-unselected: #c9c9c9;
+    --border-unselected: #3b393b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(86, 86, 105);
+}
+#logo {
+    position: absolute;
+    top: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    color: white;
+    text-shadow: black 5px 5px 5px;
+    letter-spacing: 1rem;
+}
+
+#buttons {
+    width: 30%;
+    height: 3rem;
+    display: flex;
+    align-items: flex-end;
+}
+#buttons button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 2rem;
+    background-color: var(--background);
+    border: 6px solid var(--border);
+    border-bottom: 0px;
+}
+#signup-btn {
+    background-color: var(--background-unselected) !important; 
+    border-color: var(--border-unselected) !important;
+}
+#login-btn {
+    background-color: var(--background-unselected) !important;
+    border-color: var(--border-unselected) !important;
+}
+
+a {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    width: 30%;
+    height: 20%;
+    background-color: var(--background);
+    border: 6px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+#wrapper #login-signup {
+    width: 90%;
+    display: flex;
+}
+#wrapper h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: black;
+    align-self: flex-start !important;
+}
+
+p {
+    color: blue;
+}

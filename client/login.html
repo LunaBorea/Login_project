@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="logo">LUNA INC.</h1>
+    <div id="buttons">
+        <button>Login</button>
+        <button id="signup-btn"><a href="signup.html">Signup</a></button>
+    </div>
+    <div id="wrapper">
+        <h1>LOGIN</h1>
+        <div id="login-signup">
+            <form action="/login" method="POST">
+                <input type="text" name="user" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <p><a href="signup.html">Don't have an account?</a></p>
+    </div>
+</body>
+</html>
