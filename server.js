@@ -11,8 +11,7 @@ server.use(express.json())
 // Middleware to parse incoming URL-encoded data (e.g., form data from an HTML form).
 server.use(express.urlencoded({ extended: true }))
 
-
-// Handle GET requests to the '/form' route.
+// Handle GET requests to the '/login' and '/signup' route.
 server.get('/login', (req, res)=>{
     res.sendFile(__dirname + '/client/login.html')
 })
